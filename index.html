@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootswatch-lumen.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.0/trianglify.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-default">
+            <!-- panel contents -->
+            <div class="panel-heading">Todo Items</div>
+            <div class="panel-body">
+              <!-- List group -->
+              <ul id="list" class="list-group">
+              </ul>
+              <button id="btnAddItem" class="btn btn-default"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>add item</button>
+              <button id="btnCompleteSelected" class="btn btn-default disabled"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>complete items</button>
+              <button id="btnRemoveItems" class="btn btn-default disabled"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>remove items</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <!-- panel contents -->
+            <div class="panel-heading">Logs</div>
+            <div class="panel-body">
+              <!-- List group -->
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-success">success</li>
+                <li class="list-group-item list-group-item-info">info</li>
+                <li class="list-group-item list-group-item-warning">warning</li>
+                <li class="list-group-item list-group-item-danger">danger</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; Philipp Jost 2015</p>
+      </footer>
+    </div>
+    <script src="js/vendor/jquery-1.11.2.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    //awesomeness https://github.com/qrohlf/trianglify
+      var pattern = Trianglify({
+          width: window.innerWidth,
+          height: window.innerHeight
+      });
+      document.body.appendChild(pattern.canvas())
+  </script>
+  </body>
+</html>

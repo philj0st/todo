@@ -1,0 +1,28 @@
+.container {
+	/*TODO better way to center*/
+    margin-top: 10%;
+}
+
+ul#list > li input{
+	margin-right: 20px;
+}
+
+ul#list > li.done > label{
+	text-decoration: line-through;
+}
+
+/*TODO better selector*/
+.btn > span{
+	margin-right: 5px;
+}
+
+footer{
+	text-align: center;
+}
+
+/*TODO better way to use as background*/
+canvas{
+	position: absolute;
+    top: 0;
+    z-index: -1;
+}
